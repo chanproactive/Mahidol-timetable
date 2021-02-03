@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="560.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mahidol.ControllerAddSubject">
+   <children>
+      <HBox prefHeight="20.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="tfSubjectCode" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" promptText="Subject code">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="lbError" textFill="#ff2c2c">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+       <TextField fx:id="tfSubjectName" maxWidth="300.0" prefHeight="25.0" prefWidth="200.0" promptText="Subject name">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="tfRoom" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" promptText="Room">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="200.0">
+               <children>
+                  <HBox prefHeight="20.0">
+                     <children>
+                         <Label fx:id="st" minWidth="70.0" text="Start time">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                         <ChoiceBox fx:id="cbStartTimeH" prefWidth="45.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                         <Label text=":">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                         <ChoiceBox fx:id="cbStartTimeM" prefWidth="45.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="ft" minWidth="70.0" text="Finish time">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                         <ChoiceBox fx:id="cbFinishTimeH" prefWidth="45.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                         <Label text=":">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                         <ChoiceBox fx:id="cbFinishTimeM" prefWidth="45.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="100.0">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Separator>
+            <VBox prefHeight="100.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="36.0">
+                     <children>
+                         <Label fx:id="day" minWidth="50.0" text="Day">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                         <ChoiceBox fx:id="cbDay" prefWidth="60.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                        <ColorPicker fx:id="colorPicker" prefWidth="100.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label minWidth="50.0" text="Credits: " />
+                        <Slider fx:id="sdCredits" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" snapToTicks="true" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <TextArea fx:id="taSubjectDetails" minHeight="215.0" prefHeight="600.0" prefWidth="200.0" promptText="Subject details" wrapText="true" />
+      <HBox alignment="CENTER" prefHeight="20.0" prefWidth="200.0">
+         <children>
+             <Button fx:id="btDone" minWidth="60.0" mnemonicParsing="false" onAction="#btAddOnclick" text="Done" />
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

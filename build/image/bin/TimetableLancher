@@ -1,0 +1,3 @@
+#!/bin/sh
+DIR="${0%/*}"
+"$DIR/java" -Dlog4j.configurationFile=./log4j2.xml -p "$DIR/../app" -m org.mahidol/org.mahidol.Main  "$@"

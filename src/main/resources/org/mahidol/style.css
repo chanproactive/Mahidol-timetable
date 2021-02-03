@@ -1,0 +1,94 @@
+.root{
+    -fx-background-color: #ffffff;
+}
+#gridPane{
+    -fx-background-color: transparent;
+    -fx-background-radius: 1.0;
+    -fx-background-insets: 0.0 2.0 0.0 2.0;
+
+}
+.color-picker{
+    -fx-background-color: transparent;
+}
+
+
+.pane_gray{
+    -fx-background-color: #f8f8f8;
+}
+
+.nodeRadius{
+    -fx-background-radius: 4.0;
+}
+.choice-box{
+    -fx-background-radius: 4;
+    -fx-border-color: white;
+    -fx-background-color: white;
+}
+.button{
+    -fx-border-radius: 1;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 1em;
+    -fx-background-color: #e8e8e8;
+
+}
+.table-view{
+   -fx-border-color: white;
+    -fx-table-cell-border-color: transparent;
+
+}
+.table-row-cell{
+    -fx-table-cell-border-color: transparent;
+    -fx-background-color: -fx-table-cell-border-color, #ffffff;
+    -fx-border-width: 2;
+    -fx-cell-size: 25px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #eeeeee;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #99aed3;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+.table-view .column-header .label{
+    -fx-alignment:center-left;
+    -fx-text-fill: #555555;
+}
+
+#addButton{
+    -fx-background-radius: 5em;
+    -fx-background-color: #99aed3;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 1, 2);*/
+
+}
+@font-face {
+    font-family: Delicious;
+    src: url('Cloud-Light.otf');
+}
+
+
