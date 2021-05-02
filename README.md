@@ -7,7 +7,7 @@ Mahidol timetable
 exe file for windows can be downlod here
 https://github.com/chanproactive/Mahidol-timetable/blob/master/github_resources/MahidolTimetableSetup.exe
 
-![alt text](https://github.com/chanproactive/Mahidol-timetable/blob/master/github_resources/project_diagram.jpg?raw=true)
+
 
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -96,7 +96,10 @@ https://github.com/chanproactive/Mahidol-timetable/blob/master/github_resources/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project
+
+![alt text](https://github.com/chanproactive/Mahidol-timetable/blob/master/github_resources/project_diagram.jpg?raw=true)
+
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
